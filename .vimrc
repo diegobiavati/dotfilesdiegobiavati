@@ -20,4 +20,8 @@ set title
 set et
 set smartindent
 set scrolloff=3                         " Keep 3 lines when scrolling
-set showcmd                             " Show incomplete commands
+set showcmd                             " Show incomplete commandsi
+set laststatus=2                        " Active status bar
+set t_Co=256                            " Activate color in status bar
+
+let g:airline_powerline_fonts = 1
