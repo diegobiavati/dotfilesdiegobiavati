@@ -1,5 +1,5 @@
 VIM DO DIEGO
 
 1-Instalação  
-a) git clone https://github.com/diegobiavati/colchonet.git ~/.vim  
+a) git clone https://github.com/diegobiavati/vim-bundle-diegobiavati.git ~/.vim  
 b) ln -s ~/.vim/.vimrc ~/.vimrc  
