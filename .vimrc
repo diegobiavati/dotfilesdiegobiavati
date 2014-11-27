@@ -12,7 +12,7 @@ set tabstop=2                           " Numbers of spaces of tab character
 set shiftwidth=2                        " Numbers of spaces to (auto)indent
 set tabstop=2                           " Numbers of spaces to tabstop
 set expandtab
-set number										          " Set number line: on
+set number                              " Set number line: on
 set encoding=utf8                       " Ever use coding
 set cursorline                          " Active line in edit line
 set completefunc=syntaxcomplete#Complete
@@ -24,7 +24,10 @@ set showcmd                             " Show incomplete commandsi
 set laststatus=2                        " Active status bar
 set t_Co=256                            " Activate color in status bar
 set background=dark                     " Background vim light dark
+set list lcs=tab:\|\                    " set indentLine default
 
 colorscheme solarized                   " scheme color
 
 let g:airline_powerline_fonts = 1
+
+
