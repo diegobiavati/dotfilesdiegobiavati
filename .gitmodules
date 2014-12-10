@@ -70,3 +70,6 @@
 [submodule "bundle/vim-sneak"]
 	path = bundle/vim-sneak
 	url = https://github.com/justinmk/vim-sneak.git
+[submodule "bundle/IndexedSearch"]
+	path = bundle/IndexedSearch
+	url = https://github.com/vim-scripts/IndexedSearch.git
