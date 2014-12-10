@@ -50,4 +50,4 @@ colorscheme solarized                   " scheme color
 
 let g:airline_powerline_fonts = 1
 
-
+let g:neocomplete#enable_at_startup = 1
