@@ -73,3 +73,6 @@
 [submodule "bundle/IndexedSearch"]
 	path = bundle/IndexedSearch
 	url = https://github.com/vim-scripts/IndexedSearch.git
+[submodule "bundle/vim-visual-star-search"]
+	path = bundle/vim-visual-star-search
+	url = https://github.com/nelstrom/vim-visual-star-search.git
