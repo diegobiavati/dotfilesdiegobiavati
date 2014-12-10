@@ -8,23 +8,43 @@ syntax on
 " plugin indent: on off
 filetype plugin indent on
 
-set tabstop=2                           " Numbers of spaces of tab character
-set shiftwidth=2                        " Numbers of spaces to (auto)indent
-set tabstop=2                           " Numbers of spaces to tabstop
-set expandtab
 set number                              " Set number line: on
 set encoding=utf8                       " Ever use coding
 set cursorline                          " Active line in edit line
 set completefunc=syntaxcomplete#Complete
 set title
 set et
-set smartindent
 set scrolloff=3                         " Keep 3 lines when scrolling
 set showcmd                             " Show incomplete commandsi
 set laststatus=2                        " Active status bar
 set t_Co=256                            " Activate color in status bar
 set background=dark                     " Background vim light dark
 set list lcs=tab:\|\                    " set indentLine default
+set showcmd                             "Show incomplete cmds down the bottom
+set showmode                            "Show current mode down the bottom
+
+" ================ Completion =======================
+set wildmode=list:longest
+set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
+set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+set wildignore+=*vim/backups*
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=vendor/rails/**
+set wildignore+=vendor/cache/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=*.png,*.jpg,*.gif
+
+" ================ Indentation ======================
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
 
 colorscheme solarized                   " scheme color
 
