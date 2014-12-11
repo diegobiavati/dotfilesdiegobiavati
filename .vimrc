@@ -9,6 +9,7 @@ syntax on
 filetype plugin indent on
 
 set number                              " Set number line: on
+:set mouse=a                            " Set mouse in all views
 set encoding=utf8                       " Ever use coding
 set cursorline                          " Active line in edit line
 set completefunc=syntaxcomplete#Complete

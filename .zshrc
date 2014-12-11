@@ -50,6 +50,7 @@ plugins=(git docker bundler cap command-not-found composer coffee debian gem git
 # User configuration
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+source $HOME/.rvm/scripts/rvm
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -79,7 +80,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# https://github.com/zsh-users/zsh-completions
 fpath=(~/.oh-my-zsh/custom/plugins/zsh-completions/src $fpath)
 autoload -Uz compinit && compinit -i
 
