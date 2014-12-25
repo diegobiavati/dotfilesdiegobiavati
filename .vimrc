@@ -12,7 +12,6 @@ set number                              " Set number line: on
 :set mouse=a                            " Set mouse in all views
 set encoding=utf8                       " Ever use coding
 set cursorline                          " Active line in edit line
-set completefunc=syntaxcomplete#Complete
 set title
 set et
 set scrolloff=3                         " Keep 3 lines when scrolling
@@ -52,3 +51,22 @@ colorscheme solarized                   " scheme color
 let g:airline_powerline_fonts = 1
 
 let g:neocomplete#enable_at_startup = 1
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
