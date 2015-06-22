@@ -1,3 +1,6 @@
+" Set encoding for each file
+set encoding=utf-8
+
 " Set for patoghen plugin
 execute pathogen#infect()
 
