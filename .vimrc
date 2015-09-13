@@ -49,6 +49,8 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
+set paste " active paste system 
+
 colorscheme solarized                   " scheme color
 
 let g:airline_powerline_fonts = 1
