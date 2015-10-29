@@ -49,7 +49,7 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-set paste " active paste system 
+" set paste " active paste system, d'not use for autocomplete plugin
 
 colorscheme solarized                   " scheme color
 
