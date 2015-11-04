@@ -49,7 +49,7 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-set paste " active paste system 
+"set paste " active paste system 
 
 colorscheme solarized                   " scheme color
 
