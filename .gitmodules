@@ -45,7 +45,7 @@
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
+  url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
