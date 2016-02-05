@@ -100,6 +100,3 @@
 [submodule "bundle/nerdtree-git-plugin"]
 	path = bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
-[submodule "bundle/vim-i18n"]
-	path = bundle/vim-i18n
-	url = https://github.com/stefanoverna/vim-i18n.git
