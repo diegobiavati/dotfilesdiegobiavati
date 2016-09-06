@@ -52,7 +52,7 @@ plugins=(git docker docker-compose bundler cap command-not-found composer coffee
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/cuda/bin"
 source $HOME/.rvm/scripts/rvm
 # export MANPATH="/usr/local/man:$MANPATH"
 
