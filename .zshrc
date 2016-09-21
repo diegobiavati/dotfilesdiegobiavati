@@ -214,3 +214,6 @@ zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^(<->.<-
 export PATH="$PATH:$HOME/.rvm/bin:~/.local/share/umake/nodejs/nodejs-lang/bin" # Add RVM to PATH for scripting
 screenfetch
 fortune
+
+# added by travis gem
+[ -f /home/diegobiavati/.travis/travis.sh ] && source /home/diegobiavati/.travis/travis.sh
