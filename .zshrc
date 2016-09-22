@@ -48,7 +48,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby rvm sudo zsh-syntax-highlighting zsh-completions)
+plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby rvm sudo zsh-syntax-highlighting zsh-completionsi rails)
 
 # User configuration
 
