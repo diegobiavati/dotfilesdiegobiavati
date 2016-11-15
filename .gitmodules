@@ -109,3 +109,6 @@
 [submodule "bundle/guist-vim"]
 	path = bundle/guist-vim
 	url = https://github.com/mattn/gist-vim.git
+[submodule "bundle/nvim-r"]
+	path = bundle/nvim-r
+	url = https://github.com/jalvesaq/Nvim-R.git
