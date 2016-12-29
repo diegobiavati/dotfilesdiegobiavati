@@ -48,13 +48,11 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby rvm sudo zsh-syntax-highlighting zsh-completionsi rails)
+plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby sudo zsh-syntax-highlighting zsh-completionsi rails)
 
 # User configuration
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/cuda/bin"
-source $HOME/.rvm/scripts/rvm
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -212,6 +210,9 @@ zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^(<->.<-
 [ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
 
 export PATH="$PATH:$HOME/.rvm/bin:~/.local/share/umake/nodejs/nodejs-lang/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 screenfetch
 fortune
 
