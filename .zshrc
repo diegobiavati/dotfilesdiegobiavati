@@ -218,3 +218,5 @@ fortune
 
 # added by travis gem
 [ -f /home/diegobiavati/.travis/travis.sh ] && source /home/diegobiavati/.travis/travis.sh
+
+alias dokku='bash $HOME/.dokku/contrib/dokku_client.sh'
