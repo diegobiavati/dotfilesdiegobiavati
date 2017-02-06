@@ -206,13 +206,19 @@ zstyle ':completion:*:(ssh|scp|rsync):*:hosts-host' ignored-patterns '*(.|:)*' l
 zstyle ':completion:*:(ssh|scp|rsync):*:hosts-domain' ignored-patterns '<->.<->.<->.<->' '^[-[:alnum:]]##(.[-[:alnum:]]##)##' '*@*'
 zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^(<->.<->.<->.<->|(|::)([[:xdigit:].]##:(#c,2))##(|%*))' '127.0.0.<->' '255.255.255.255' '::1' 'fe80::*'
 
+# Ubuntu make installation of Nodejs Lang
+PATH=/home/diegobiavati/.local/share/umake/nodejs/nodejs-lang/bin:/home/diegobiavati/.node_modules/bin:$PATH
+
+PATH="$HOME/.dropbox-bin:$PATH"
+# Ubuntu make installation of Ubuntu Make binary symlink
+PATH=/home/diegobiavati/.local/share/umake/bin:$PATH
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 # added by travis gem
 [ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
 
 export PATH="$PATH:$HOME/.rvm/bin:~/.local/share/umake/nodejs/nodejs-lang/bin" # Add RVM to PATH for scripting
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 screenfetch
 fortune
 
