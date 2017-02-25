@@ -48,7 +48,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby sudo zsh-syntax-highlighting zsh-completionsi rails)
+plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby sudo zsh-syntax-highlighting zsh-completions rails)
 
 # User configuration
 
@@ -209,6 +209,8 @@ zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^(<->.<-
 # Ubuntu make installation of Nodejs Lang
 PATH=/home/diegobiavati/.local/share/umake/nodejs/nodejs-lang/bin:/home/diegobiavati/.node_modules/bin:$PATH
 
+autoload -U compinit && compinit
+
 PATH="$HOME/.dropbox-bin:$PATH"
 # Ubuntu make installation of Ubuntu Make binary symlink
 PATH=/home/diegobiavati/.local/share/umake/bin:$PATH
@@ -226,3 +228,4 @@ fortune
 [ -f /home/diegobiavati/.travis/travis.sh ] && source /home/diegobiavati/.travis/travis.sh
 
 alias dokku='bash $HOME/.dokku/contrib/dokku_client.sh'
+source /home/diegobiavati/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

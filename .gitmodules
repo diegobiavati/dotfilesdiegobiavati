@@ -112,3 +112,6 @@
 [submodule "bundle/nvim-r"]
 	path = bundle/nvim-r
 	url = https://github.com/jalvesaq/Nvim-R.git
+[submodule "bundle/vim-devicons"]
+	path = bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
