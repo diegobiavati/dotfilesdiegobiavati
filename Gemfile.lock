@@ -1,11 +1,11 @@
 GEM
   specs:
-    childprocess (0.5.9)
+    childprocess (0.6.3)
       ffi (~> 1.0, >= 1.0.11)
-    ffi (1.9.10)
-    iniparse (1.4.2)
-    overcommit (0.32.0)
-      childprocess (~> 0.5.8)
+    ffi (1.9.18)
+    iniparse (1.4.3)
+    overcommit (0.39.1)
+      childprocess (~> 0.6.3)
       iniparse (~> 1.4)
 
 PLATFORMS
@@ -15,4 +15,4 @@ DEPENDENCIES
   overcommit
 
 BUNDLED WITH
-   1.11.2
+   1.15.1
