@@ -52,12 +52,23 @@ set expandtab
 " Set ctags options
 set tags=./tags;./gems.tags
 
+let g:airline_theme='solarized'
 colorscheme solarized                   " scheme color
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 let g:neocomplete#enable_at_startup = 1
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Plugin key-mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
