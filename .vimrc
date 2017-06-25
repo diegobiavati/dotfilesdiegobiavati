@@ -49,7 +49,8 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-" set paste " active paste system, d'not use for autocomplete plugin
+" Set ctags options
+set tags=./tags;./gems.tags
 
 colorscheme solarized                   " scheme color
 
