@@ -124,3 +124,12 @@
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
+[submodule "bundle/vim-rhubarb"]
+	path = bundle/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "bundle/incsearch"]
+	path = bundle/incsearch
+	url = https://github.com/haya14busa/incsearch.vim.git
+[submodule "bundle/incsearch-easymotion"]
+	path = bundle/incsearch-easymotion
+	url = https://github.com/haya14busa/incsearch-easymotion.vim.git
