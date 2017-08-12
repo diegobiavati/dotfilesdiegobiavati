@@ -133,3 +133,6 @@
 [submodule "bundle/incsearch-easymotion"]
 	path = bundle/incsearch-easymotion
 	url = https://github.com/haya14busa/incsearch-easymotion.vim.git
+[submodule "tmux"]
+	path = tmux
+	url = https://github.com/gpakosz/.tmux.git

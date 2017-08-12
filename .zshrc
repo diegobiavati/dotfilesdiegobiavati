@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="random"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -48,7 +48,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby sudo zsh-syntax-highlighting zsh-completions rails rvm)
+plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby sudo zsh-syntax-highlighting zsh-completions rails rvm safe-paste tmux)
 
 # User configuration
 
@@ -227,4 +227,9 @@ screenfetch
 [ -f /home/diegobiavati/.travis/travis.sh ] && source /home/diegobiavati/.travis/travis.sh
 
 alias dokku='bash $HOME/.dokku/contrib/dokku_client.sh'
+
+if [ `which tmux 2> /dev/null` -a -z "$TMUX" ]; then
+  tmux -2 attach || tmux -2 new; exit
+fi
+
 source /home/diegobiavati/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
