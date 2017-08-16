@@ -1,4 +1,4 @@
-# Var EDITOR for vim editor
+### Var EDITOR for vim editor
 export EDITOR=vim
 
 # Path to your oh-my-zsh installation.
@@ -48,7 +48,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby sudo zsh-syntax-highlighting zsh-completions rails rvm safe-paste tmux)
+plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby sudo zsh-syntax-highlighting zsh-completions rails rvm safe-paste heroku archlinux systemd web-search)
 
 # User configuration
 
@@ -231,5 +231,6 @@ alias dokku='bash $HOME/.dokku/contrib/dokku_client.sh'
 if [ `which tmux 2> /dev/null` -a -z "$TMUX" ]; then
   tmux -2 attach || tmux -2 new; exit
 fi
+
 
 source /home/diegobiavati/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
