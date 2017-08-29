@@ -221,7 +221,7 @@ PATH=/home/diegobiavati/.local/share/umake/bin:$PATH
 [ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
 
 export PATH="$PATH:$HOME/.rvm/bin:~/.local/share/umake/nodejs/nodejs-lang/bin" # Add RVM to PATH for scripting
-screenfetch
+optirun screenfetch
 
 # added by travis gem
 [ -f /home/diegobiavati/.travis/travis.sh ] && source /home/diegobiavati/.travis/travis.sh
