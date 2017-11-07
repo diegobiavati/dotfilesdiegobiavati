@@ -228,9 +228,9 @@ optirun screenfetch
 
 alias dokku='bash $HOME/.dokku/contrib/dokku_client.sh'
 
-if [ `which tmux 2> /dev/null` -a -z "$TMUX" ]; then
-  tmux -2 attach || tmux -2 new; exit
-fi
+#if [ `which tmux 2> /dev/null` -a -z "$TMUX" ]; then
+#  tmux -2 attach || tmux -2 new; exit
+#fi
 
 
 source /home/diegobiavati/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
