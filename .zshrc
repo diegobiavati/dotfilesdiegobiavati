@@ -213,7 +213,6 @@ autoload -U compinit && compinit
 
 PATH="$HOME/.dropbox-bin:$PATH"
 # Ubuntu make installation of Ubuntu Make binary symlink
-PATH=/home/diegobiavati/.local/share/umake/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
@@ -225,8 +224,6 @@ optirun screenfetch
 
 # added by travis gem
 [ -f /home/diegobiavati/.travis/travis.sh ] && source /home/diegobiavati/.travis/travis.sh
-
-alias dokku='bash $HOME/.dokku/contrib/dokku_client.sh'
 
 #if [ `which tmux 2> /dev/null` -a -z "$TMUX" ]; then
 #  tmux -2 attach || tmux -2 new; exit
