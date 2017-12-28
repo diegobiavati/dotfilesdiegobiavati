@@ -1,4 +1,4 @@
-### Var EDITOR for vim editor
+## Var EDITOR for vim editor
 export EDITOR=vim
 
 # Path to your oh-my-zsh installation.
@@ -48,7 +48,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby sudo zsh-syntax-highlighting zsh-completions rails rvm safe-paste heroku archlinux systemd web-search)
+plugins=(git docker docker-compose bundler cap command-not-found composer coffee debian gem git-extras knife ruby sudo zsh-syntax-highlighting zsh-completions rails safe-paste heroku archlinux systemd web-search asdf)
 
 # User configuration
 
@@ -214,12 +214,10 @@ autoload -U compinit && compinit
 PATH="$HOME/.dropbox-bin:$PATH"
 # Ubuntu make installation of Ubuntu Make binary symlink
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # added by travis gem
 [ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
 
-export PATH="$PATH:$HOME/.rvm/bin:~/.local/share/umake/nodejs/nodejs-lang/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:~/.local/share/umake/nodejs/nodejs-lang/bin" # Add RVM to PATH for scripting
 optirun screenfetch
 
 # added by travis gem
@@ -231,3 +229,7 @@ optirun screenfetch
 
 
 source /home/diegobiavati/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
