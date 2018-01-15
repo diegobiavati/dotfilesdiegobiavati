@@ -1,5 +1,7 @@
 # https://github.com/gpakosz/.tmux
-# (‑●‑●)> released under the WTFPL v2 license, by Gregory Pakosz (@gpakosz)
+# (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
+#         without any warranty.
+#         Copyright 2012— Gregory Pakosz (@gpakosz).
 
 
 # -- navigation ----------------------------------------------------------------
@@ -95,8 +97,8 @@ tmux_conf_theme_window_status_fg='#8a8a8a'              # light gray
 tmux_conf_theme_window_status_bg='#080808'              # dark gray
 tmux_conf_theme_window_status_attr='none'
 tmux_conf_theme_window_status_format='#I #W'
-tmux_conf_theme_window_status_format='#{circled_window_index} #W'
-tmux_conf_theme_window_status_format='#I #W#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}'
+#tmux_conf_theme_window_status_format='#{circled_window_index} #W'
+#tmux_conf_theme_window_status_format='#I #W#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}'
 
 # window current status style
 #   - built-in variables are:
@@ -105,8 +107,8 @@ tmux_conf_theme_window_status_current_fg='#000000'      # black
 tmux_conf_theme_window_status_current_bg='#00afff'      # light blue
 tmux_conf_theme_window_status_current_attr='bold'
 tmux_conf_theme_window_status_current_format='#I #W'
-tmux_conf_theme_window_status_current_format='#{circled_window_index} #W'
-tmux_conf_theme_window_status_current_format='#I #W#{?window_zoomed_flag,🔍,}'
+#tmux_conf_theme_window_status_current_format='#{circled_window_index} #W'
+#tmux_conf_theme_window_status_current_format='#I #W#{?window_zoomed_flag,🔍,}'
 
 # window activity status style
 tmux_conf_theme_window_status_activity_fg='default'
@@ -128,10 +130,10 @@ tmux_conf_theme_left_separator_main=''
 tmux_conf_theme_left_separator_sub='|'
 tmux_conf_theme_right_separator_main=''
 tmux_conf_theme_right_separator_sub='|'
-tmux_conf_theme_left_separator_main=''  # /!\ you don't need to install Powerline
-tmux_conf_theme_left_separator_sub=''   #   you only need fonts patched with
-tmux_conf_theme_right_separator_main='' #   Powerline symbols or the standalone
-tmux_conf_theme_right_separator_sub=''  #   PowerlineSymbols.otf font
+#tmux_conf_theme_left_separator_main=''  # /!\ you don't need to install Powerline
+#tmux_conf_theme_left_separator_sub=''   #   you only need fonts patched with
+#tmux_conf_theme_right_separator_main='' #   Powerline symbols or the standalone
+#tmux_conf_theme_right_separator_sub=''  #   PowerlineSymbols.otf font
 
 # status left/right content:
 #   - separate main sections with '|'
@@ -169,13 +171,13 @@ tmux_conf_theme_status_right_bg='#080808,#d70000,#e4e4e4' # dark gray, red, whit
 tmux_conf_theme_status_right_attr='none,none,bold'
 
 # pairing indicator
-tmux_conf_theme_pairing='👓'          # U+1F453
+tmux_conf_theme_pairing='👓 '          # U+1F453
 tmux_conf_theme_pairing_fg='none'
 tmux_conf_theme_pairing_bg='none'
 tmux_conf_theme_pairing_attr='none'
 
 # prefix indicator
-tmux_conf_theme_prefix='⌨'            # U+2328
+tmux_conf_theme_prefix='⌨ '            # U+2328
 tmux_conf_theme_prefix_fg='none'
 tmux_conf_theme_prefix_bg='none'
 tmux_conf_theme_prefix_attr='none'
@@ -209,21 +211,21 @@ tmux_conf_battery_bar_palette='gradient'
 #   - heat
 #   - 'colour_low,colour_half,colour_full'
 tmux_conf_battery_hbar_palette='gradient'
-tmux_conf_battery_hbar_palette='#d70000,#ff5f00,#5fff00'  # red, orange, green
+#tmux_conf_battery_hbar_palette='#d70000,#ff5f00,#5fff00'  # red, orange, green
 
 # battery vbar palette, possible values are:
 #   - gradient (default)
 #   - heat
 #   - 'colour_low,colour_half,colour_full'
 tmux_conf_battery_vbar_palette='gradient'
-tmux_conf_battery_vbar_palette='#d70000,#ff5f00,#5fff00'  # red, orange, green
+#tmux_conf_battery_vbar_palette='#d70000,#ff5f00,#5fff00'  # red, orange, green
 
 # symbols used to indicate whether battery is charging or discharging
 tmux_conf_battery_status_charging='↑'       # U+2191
 tmux_conf_battery_status_discharging='↓'    # U+2193
-tmux_conf_battery_status_charging='⚡ '    # U+26A1
-tmux_conf_battery_status_charging='🔌 '    # U+1F50C
-tmux_conf_battery_status_discharging='🔋 ' # U+1F50B
+#tmux_conf_battery_status_charging='⚡ '    # U+26A1
+#tmux_conf_battery_status_charging='🔌 '    # U+1F50C
+#tmux_conf_battery_status_discharging='🔋 ' # U+1F50B
 
 # clock style
 tmux_conf_theme_clock_colour='#00afff'  # light blue
@@ -263,4 +265,3 @@ tmux_conf_copy_to_os_clipboard=false
 
 # move status line to top
 #set -g status-position top
-setw -g aggressive-resize on

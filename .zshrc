@@ -1,6 +1,9 @@
 ## Var EDITOR for vim editor
 export EDITOR=vim
 
+## config terminal for use 256 colors
+export TERM="xterm-256color"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -9,8 +12,13 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
+
+# Powerline configs
 POWERLEVEL9K_MODE="awesome-fontconfig"
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time ram)
+
+# tmux configs
+ZSH_TMUX_AUTOSTART=true
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -69,6 +77,7 @@ plugins=(
   zsh-completions
   rails
   safe-paste
+  tmux
   heroku
   archlinux
   systemd
@@ -251,11 +260,12 @@ optirun screenfetch
 # added by travis gem
 [ -f /home/diegobiavati/.travis/travis.sh ] && source /home/diegobiavati/.travis/travis.sh
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
+
 #if [ `which tmux 2> /dev/null` -a -z "$TMUX" ]; then
 #  tmux -2 attach || tmux -2 new; exit
 #fi
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
 
 source /home/diegobiavati/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
