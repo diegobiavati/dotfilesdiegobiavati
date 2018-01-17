@@ -59,32 +59,35 @@ ZSH_TMUX_AUTOSTART=true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  git-flow-avh
+  archlinux
+  asdf
+  autojump
+  bgnotify
+  bower
+  bundler
+  common-aliases
   docker
   docker-compose
-  bundler
-  cap
-  command-not-found
-  composer
-  coffee
-  debian
-  gem git-extras
-  knife
-  ruby
-  sudo
-  zsh-syntax-highlighting
-  zsh-completions
-  rails
-  safe-paste
-  tmux
+  git
+  git-extras
+  git-flow-avh
+  github
+  gem
   heroku
-  archlinux
+  npm
+  perms
+  python
+  rails
+  ruby
+  safe-paste
+  sudo
   systemd
-  web-search
-  asdf
+  tmux
+  vagrant
+  yarn
   zsh-autosuggestions
-  bgnotify
+  zsh-completions
+  zsh-syntax-highlighting
 )
 
 # User configuration
