@@ -140,7 +140,7 @@ plugins=(
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/cuda/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/cuda/bin:/home/diegobiavati/.local/bin"
 
 source $ZSH/oh-my-zsh.sh
 
