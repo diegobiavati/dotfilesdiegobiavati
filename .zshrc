@@ -325,3 +325,4 @@ source /home/diegobiavati/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-
 . $HOME/.asdf/completions/asdf.bash
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/home/diegobiavati/Opt/miniconda3/bin:$PATH"
