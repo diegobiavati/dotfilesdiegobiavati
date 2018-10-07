@@ -306,7 +306,7 @@ PATH="$HOME/.dropbox-bin:$PATH"
 [ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
 
 export PATH="$PATH:~/.local/share/umake/nodejs/nodejs-lang/bin" # Add RVM to PATH for scripting
-optirun screenfetch
+screenfetch
 
 # added by travis gem
 [ -f /home/diegobiavati/.travis/travis.sh ] && source /home/diegobiavati/.travis/travis.sh
