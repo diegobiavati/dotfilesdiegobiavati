@@ -326,3 +326,9 @@ source /home/diegobiavati/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/home/diegobiavati/Opt/miniconda3/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/diegobiavati/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/diegobiavati/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/diegobiavati/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/diegobiavati/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
