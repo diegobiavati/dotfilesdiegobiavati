@@ -122,6 +122,7 @@ plugins=(
   github
   gem
   heroku
+  kubectl
   npm
   perms
   python
