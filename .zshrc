@@ -295,18 +295,8 @@ zstyle ':completion:*:(ssh|scp|rsync):*:hosts-host' ignored-patterns '*(.|:)*' l
 zstyle ':completion:*:(ssh|scp|rsync):*:hosts-domain' ignored-patterns '<->.<->.<->.<->' '^[-[:alnum:]]##(.[-[:alnum:]]##)##' '*@*'
 zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^(<->.<->.<->.<->|(|::)([[:xdigit:].]##:(#c,2))##(|%*))' '127.0.0.<->' '255.255.255.255' '::1' 'fe80::*'
 
-# Ubuntu make installation of Nodejs Lang
-PATH=/home/diegobiavati/.local/share/umake/nodejs/nodejs-lang/bin:/home/diegobiavati/.node_modules/bin:$PATH
-
 autoload -U compinit && compinit
 
-PATH="$HOME/.dropbox-bin:$PATH"
-# Ubuntu make installation of Ubuntu Make binary symlink
-
-# added by travis gem
-[ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
-
-export PATH="$PATH:~/.local/share/umake/nodejs/nodejs-lang/bin" # Add RVM to PATH for scripting
 screenfetch
 
 # added by travis gem
@@ -318,14 +308,11 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
 #  tmux -2 attach || tmux -2 new; exit
 #fi
 
-
 source /home/diegobiavati/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/home/diegobiavati/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
