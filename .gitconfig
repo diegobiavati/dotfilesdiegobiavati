@@ -126,5 +126,6 @@
 [user]
 	name = Diego Biavati
 	email = diegobiavati@gmail.com
+	signingkey = diegobiavati@gmail.com
 [github]
 	user = diegobiavati
