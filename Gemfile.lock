@@ -1,9 +1,9 @@
 GEM
   specs:
-    childprocess (3.0.0)
+    childprocess (4.0.0)
     iniparse (1.5.0)
-    overcommit (0.52.1)
-      childprocess (>= 0.6.3, < 4)
+    overcommit (0.57.0)
+      childprocess (>= 0.6.3, < 5)
       iniparse (~> 1.4)
 
 PLATFORMS
@@ -13,4 +13,4 @@ DEPENDENCIES
   overcommit
 
 BUNDLED WITH
-   2.1.4
+   2.2.3
