@@ -61,6 +61,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:neocomplete#enable_at_startup = 1
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
+let g:snipMate = { 'snippet_version' : 1 }
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
